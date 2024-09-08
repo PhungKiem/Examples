@@ -7,7 +7,13 @@ using namespace std;
 
 int main()
 {
+  int x,y;
+ cout << "Enter an Integer:";
+  cin >> x;
+  cout << "Enter another Integer:";
+  cin >> y;
 
+  
   cout<< "From Default Constructor: " << endl;
   PointType<int> p1I;
   PointType<double> p1D;
@@ -17,8 +23,8 @@ int main()
     p1D.print();
 
   cout << "\nConstrutor with Parameters: " << endl;
-  PointType<int> p2I(3,5);
-  PointType<double> p2D(3.5,5.5);
+  PointType<int> p2I(x,y);
+  PointType<double> p2D(x,y);
   cout << "Integer Point:";
   p2I.print();
   cout << "Double Point:";
